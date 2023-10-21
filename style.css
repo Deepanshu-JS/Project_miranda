@@ -1,0 +1,399 @@
+@font-face {
+  font-family: Domain;
+  src: url("Domain.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main{
+  display: flexbox;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  height: 130vh;
+  width: 100vw;
+  background-color: #c4bcb3;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  padding: 0 30px;
+  align-items: center; /*y axis*/
+  justify-content: space-between; /*  x axis*/
+  border-bottom: 1px black solid;
+}
+
+#nav img {
+  height: 30px;
+  width: 30%;
+}
+
+#nav h5 {
+  font-size: 20px;
+  font-weight: 100;
+  width: 30%;
+}
+
+#nav i {
+  width: 30px;
+  text-align: right;
+  width: 30%;
+}
+
+/*second part */
+
+#all-elem {
+  display: flex;
+
+  height: 350px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px; /*40 upar neche ka space 60 left right ka*/
+}
+
+#elem1 {
+  width: 30%;
+  height: 100%;
+}
+
+#elem1 h4 span {
+  background-color: orangered;
+  color: rgb(201, 199, 199);
+  font-weight: 100;
+  font-size: 20px;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+#img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* ye property img tag pe kaam karti hai*/
+  transition: all ease 0.5s;
+}
+
+#img-div:hover img {
+  scale: 1.1;
+}
+
+#elem1 h4 {
+  font-family: canopee;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+#elem1 p {
+  font-family: Domain;
+  font-size: 18px;
+  font-weight: 50;
+  color: #656565;
+}
+
+#elem1 #img-div {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#elem2 {
+  width: 30%;
+  height: 100%;
+  padding: 20px 60px;
+  text-align: center;
+  border-right: 1px solid #222;
+  border-left: 1px solid #222;
+}
+
+#elem2 h2 {
+  font-family: canopee;
+  font-size: 70px;
+  font-weight: 100;
+}
+
+#elem2 h3 {
+  font-family: Domain;
+  font-size: 40px;
+  font-weight: 50;
+  color: #2f2f2f;
+  margin: 7px 0;
+}
+
+#elem2 h6 {
+  font-family: Domain;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#elem3 {
+  width: 30%;
+  height: 100%;
+}
+#elem3 h4 {
+  font-family: canopee;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#elem3 h4 span {
+  background-color: orangered;
+  color: rgb(201, 199, 199);
+  font-weight: 100;
+  font-size: 20px;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+#elem3 #img-div2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+#img-div2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* ye property img tag pe kaam karti hai*/
+  transition: all ease 0.5s;
+}
+#img-div2:hover img {
+  scale: 1.1;
+}
+
+#elem3 p {
+  font-family: Domain;
+  font-size: 18px;
+  font-weight: 50;
+  color: #656565;
+}
+#mira{
+  flex-wrap: wrap;
+}
+
+/* #page1 #mira {
+  font-size: 16em;
+  font-family: canopee;
+  font-weight: 100;
+  background-color: #000000;
+  color: #c4bcb3;
+  width: 96%;
+  height: fit-content;
+  margin-left: 2%;
+  padding-left: 45px;
+  line-height: 470px;
+  letter-spacing: -15px;
+  display: flex;
+} */
+
+#mira {
+  font-size: 16vw; /* Use vw units for font size */
+  font-family: canopee;
+  font-weight: 100;
+  background-color: #000000;
+  color: #c4bcb3;
+  width: 100%; /* Change width to 100% */
+  height: fit-content;
+  margin: 0 auto; /* Center the container */
+  padding-left: 2vw; /* Use vw units for padding */
+  line-height: 1; /* Reset line-height */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Adjust font size for smaller screens */
+
+
+#page2 {
+  height: 150vh;
+  width: 100%;
+  background-color: #c4bcb3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10px;
+  
+}
+
+#page-2left {
+  height: 100%;
+  width: 35%;
+  padding-right: 50px;
+  border-right: 1px solid #222;
+  margin-left: 20px;
+}
+
+#page-2left h1 {
+  font-size: 130px;
+  font-family: canopee;
+  text-align: center;
+  line-height: 160px; /*gap */
+  font-weight: 100;
+}
+
+#page-2left h1 span {
+  font-size: 190px;
+  font-family: canopee;
+  text-align: center;
+  line-height: 130px;
+}
+
+#page-2left img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page-2left p {
+  font: 34px;
+  font-family: Domain;
+  color: #2f2f2f;
+  margin-top: 20px;
+}
+
+#page-2right {
+  height: 100%;
+  width: 65%;
+  padding: 0 45px;
+}
+
+#page-2right img {
+  height: 61%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page-2right h1 {
+  font-family: Domain;
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+#main {
+  background-color: #c4bcb3;
+  padding-bottom: 40px;
+}
+/*IMP*/
+#page3 {
+  padding-bottom: 20px;
+  height: 50vh;
+  position: relative;
+  background-color: #c4bcb3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Important*/
+#page3 h1 {
+  font-size: 400px;
+  font-family: canopee;
+  font-weight: 100;
+  letter-spacing: -10px;
+  background-color: #141313;
+  margin-left: 20px;
+  padding: 0 20px;
+  padding-right: 30px;
+  width: fit-content; /*ye text background-color ko set kar deta hai */
+  color: #c4bcb3;
+  line-height: 350px;
+}
+
+#page3 img {
+  position: absolute;
+  height: 350px;
+  top: 0;
+  right: 7%;
+}
+
+#page4 {
+  padding-top: 50px;
+  display: flex;
+  padding-left: 20px;
+  flex-wrap: wrap;
+}
+
+#page4-left {
+  width: 60%;
+  border-right: 1px solid black;
+  padding-right: 40px;
+}
+
+#left4-upper {
+  display: flex;
+}
+#upper-left4 {
+  width: 170%;
+  border-right: 1px solid black;
+}
+#upper-left4 h1 {
+  font-family: Domain;
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: -2px;
+}
+#upper-left4 h4 span {
+  font-family: doamin;
+}
+#upper-left4 h4 {
+  font-family: Domain;
+  font-weight: lighter;
+  color: rgb(115, 113, 113);
+}
+#upper-left4 h3 {
+  font-family: EditorialNew-Light;
+  font-size: 50px;
+  font-weight: 50;
+  padding-bottom: 20px;
+  color: #222;
+  line-height: 50px;
+
+}
+#upper-right4 {
+  padding-left: 40px;
+}
+#upper-right4 h1 {
+  font-size: large;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  
+}
+#upper-right4 img {
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  padding-bottom: 5px;
+}
+#img-div {
+  overflow: hidden;
+}
+
+#img-div:hover img {
+  scale: 1.1;
+}
+
+#upper-right4 p {
+ font-family: Domain;
+ font-weight: normal;
+ color:rgb(115, 113, 113);
+}
+
+#page4-img img{
+  width: 100%;
+  padding-top: 50px;
+}
