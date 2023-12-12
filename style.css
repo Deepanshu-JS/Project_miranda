@@ -299,24 +299,26 @@ body {
   flex-wrap: wrap;
 }
 
+
 /*Important*/
 #page3 h1 {
-  font-size: 400px;
+  font-size: 25vw; /* Use vw units for font size */
   font-family: canopee;
   font-weight: 100;
-  letter-spacing: -10px;
-  background-color: #141313;
-  margin-left: 20px;
-  padding: 0 20px;
-  padding-right: 30px;
-  width: fit-content; /*ye text background-color ko set kar deta hai */
+  background-color: #000000;
   color: #c4bcb3;
-  line-height: 350px;
+  width:fit-content; /* Change width to 100% */
+  height: fit-content;
+  line-height: 1; /* Reset line-height */
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+   
 }
 
 #page3 img {
   position: absolute;
-  height: 350px;
+  height: 25vw;
   top: 0;
   right: 7%;
 }
