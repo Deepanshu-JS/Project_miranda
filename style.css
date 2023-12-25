@@ -9,10 +9,9 @@
   box-sizing: border-box;
 }
 
-#main{
-  display: flexbox;
+#main {
+  padding: 10px;
 }
-
 
 html,
 body {
@@ -20,23 +19,22 @@ body {
   width: 100%;
 }
 
+/*-------page 1-----------------*/
 #page1 {
-  height: 130vh;
-  width: 100vw;
   background-color: #c4bcb3;
   position: relative;
   overflow: hidden;
-  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 #nav {
-  height: 100px;
   width: 100%;
   display: flex;
-  padding: 0 30px;
+  padding:  30px;
   align-items: center; /*y axis*/
   justify-content: space-between; /*  x axis*/
   border-bottom: 1px black solid;
+  
 }
 
 #nav img {
@@ -60,23 +58,20 @@ body {
 
 #all-elem {
   display: flex;
-
-  height: 350px;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 60px; /*40 upar neche ka space 60 left right ka*/
+  padding: 10px 10px 10px 10px;
 }
 
 #elem1 {
   width: 30%;
-  height: 100%;
 }
 
 #elem1 h4 span {
   background-color: orangered;
   color: rgb(201, 199, 199);
   font-weight: 100;
-  font-size: 20px;
+  font-size: 2vw;
   padding: 3px;
   border-radius: 5px;
   margin-left: 10px;
@@ -95,13 +90,12 @@ body {
 
 #elem1 h4 {
   font-family: canopee;
-  margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 2vw;
 }
 #elem1 p {
   font-family: Domain;
-  font-size: 18px;
+  font-size: 1vw;
   font-weight: 50;
   color: #656565;
 }
@@ -114,8 +108,7 @@ body {
 
 #elem2 {
   width: 30%;
-  height: 100%;
-  padding: 20px 60px;
+
   text-align: center;
   border-right: 1px solid #222;
   border-left: 1px solid #222;
@@ -123,13 +116,13 @@ body {
 
 #elem2 h2 {
   font-family: canopee;
-  font-size: 70px;
+  font-size: 7vw;
   font-weight: 100;
 }
 
 #elem2 h3 {
   font-family: Domain;
-  font-size: 40px;
+  font-size: 2vw;
   font-weight: 50;
   color: #2f2f2f;
   margin: 7px 0;
@@ -140,30 +133,27 @@ body {
   font-size: 20px;
   font-weight: 100;
 }
-
+/*---------------------*/
 #elem3 {
   width: 30%;
-  height: 100%;
 }
 #elem3 h4 {
   font-family: canopee;
-  margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 2vw;
 }
 
 #elem3 h4 span {
   background-color: orangered;
   color: rgb(201, 199, 199);
   font-weight: 100;
-  font-size: 20px;
+  font-size: 2vw;
   padding: 3px;
   border-radius: 5px;
   margin-left: 10px;
 }
 
 #elem3 #img-div2 {
-  height: 50%;
   width: 100%;
   overflow: hidden;
 }
@@ -179,11 +169,11 @@ body {
 
 #elem3 p {
   font-family: Domain;
-  font-size: 18px;
+  font-size: 1vw;
   font-weight: 50;
   color: #656565;
 }
-#mira{
+#mira {
   flex-wrap: wrap;
 }
 
@@ -219,44 +209,37 @@ body {
 }
 
 /* Adjust font size for smaller screens */
-
-
+@media only screen and (max-width: 600px) {
+}
+/*----------------page2------------*/
 #page2 {
-  height: 150vh;
-  width: 100%;
   background-color: #c4bcb3;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 10px;
-  
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 #page-2left {
-  height: 100%;
-  width: 35%;
-  padding-right: 50px;
+  padding-right: 10px;
   border-right: 1px solid #222;
-  margin-left: 20px;
 }
 
 #page-2left h1 {
-  font-size: 130px;
+  font-size: 8vw;
   font-family: canopee;
   text-align: center;
-  line-height: 160px; /*gap */
   font-weight: 100;
+
 }
 
 #page-2left h1 span {
-  font-size: 190px;
+  font-size: 10vw;
   font-family: canopee;
   text-align: center;
-  line-height: 130px;
+  
 }
 
 #page-2left img {
-  height: 60%;
   width: 100%;
   object-fit: cover;
 }
@@ -269,9 +252,7 @@ body {
 }
 
 #page-2right {
-  height: 100%;
-  width: 65%;
-  padding: 0 45px;
+  padding-left: 10px;
 }
 
 #page-2right img {
@@ -282,72 +263,62 @@ body {
 
 #page-2right h1 {
   font-family: Domain;
-  font-size: 80px;
-  letter-spacing: 2px;
+  font-size: 6vw;
 }
 #main {
   background-color: #c4bcb3;
   padding-bottom: 40px;
 }
-/*IMP*/
+/*----------------page 3-----------------------IMP*/
 #page3 {
-  padding-bottom: 20px;
-  height: 50vh;
   position: relative;
   background-color: #c4bcb3;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 
 /*Important*/
 #page3 h1 {
-  font-size: 25vw; /* Use vw units for font size */
+  font-size: 26vw; /* Use vw units for font size */
   font-family: canopee;
   font-weight: 100;
   background-color: #000000;
   color: #c4bcb3;
-  width:fit-content; /* Change width to 100% */
-  height: fit-content;
+  width: fit-content; /* Change width to 100% */
+
   line-height: 1; /* Reset line-height */
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-   
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #page3 img {
-  position: absolute;
-  height: 25vw;
+  height: 27vw;
   top: 0;
   right: 7%;
 }
 
-#page4 {
-  padding-top: 50px;
-  display: flex;
-  padding-left: 20px;
-  flex-wrap: wrap;
-}
+/*page 4*/
 
 #page4-left {
   width: 60%;
   border-right: 1px solid black;
-  padding-right: 40px;
+  margin-top: 3vw;
 }
 
 #left4-upper {
   display: flex;
+  margin-top: 30px;
+  width: 100%;
 }
 #upper-left4 {
-  width: 170%;
+  padding: 0px 10px 10px 10px;
   border-right: 1px solid black;
 }
 #upper-left4 h1 {
   font-family: Domain;
-  font-size: 60px;
-  font-weight: 100;
-  letter-spacing: -2px;
+  font-size: 3vw;
 }
 #upper-left4 h4 span {
   font-family: doamin;
@@ -359,27 +330,24 @@ body {
 }
 #upper-left4 h3 {
   font-family: EditorialNew-Light;
-  font-size: 50px;
-  font-weight: 50;
-  padding-bottom: 20px;
   color: #222;
-  line-height: 50px;
-
+  font-size: 2.5vw;
+  padding-bottom: 10px;
 }
 #upper-right4 {
-  padding-left: 40px;
+  width: 100%;
 }
 #upper-right4 h1 {
   font-size: large;
   letter-spacing: -1px;
-  padding-bottom: 10px;
-  
+  padding: 0px 20px 0px 20px;
+ 
 }
 #upper-right4 img {
-  width: 100%;
   object-fit: cover;
   transition: all ease 0.5s;
-  padding-bottom: 5px;
+  padding: 0px 20px 0px 20px;
+ 
 }
 #img-div {
   overflow: hidden;
@@ -390,12 +358,14 @@ body {
 }
 
 #upper-right4 p {
- font-family: Domain;
- font-weight: normal;
- color:rgb(115, 113, 113);
+  font-family: Domain;
+  font-weight: normal;
+  color: rgb(115, 113, 113);
+  font-size: 1vw;
+  padding: 0px 20px 0px 20px;
 }
 
-#page4-img img{
+#page4-img img {
   width: 100%;
-  padding-top: 50px;
+  padding: 10px 10px 0px 0px;
 }
