@@ -17,7 +17,7 @@ tl.to("#main",{
     duration:0
 })
 tl.to("#main",{
-    y:"30vh",
+    y:"0vh",
     duration:1,
     delay:1,
     
@@ -72,3 +72,9 @@ tl2.to("body", {
   .to(".preloader", {
     display: "none"
   });
+
+
+  
+
+
+  
