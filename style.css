@@ -11,15 +11,14 @@
 
 html,
 body {
-  overflow-y: scroll;
+  overflow-y: scroll,hidden !important;
   overflow-x: hidden;
-  position: absolute;
+
   -webkit-overflow-scrolling: touch;
 }
 
 #main {
   padding: 15px;
-  overflow: hidden;
   background-attachment: #c4bcb3;
 }
 
