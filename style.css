@@ -8,12 +8,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*imp scrooling bug fic*/
 html,
 body {
   overflow-y: scroll,hidden !important;
-  overflow-x: hidden;
-
   -webkit-overflow-scrolling: touch;
 }
 
