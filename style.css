@@ -10,6 +10,9 @@
   
 }
 
+html { overflow-y: scroll; overflow-x:hidden; }
+body { position: absolute; }
+
 #main {
   padding: 15px;
   overflow: hidden;
@@ -180,21 +183,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* #page1 #mira {
-  font-size: 16em;
-  font-family: canopee;
-  font-weight: 100;
-  background-color: #000000;
-  color: #c4bcb3;
-  width: 96%;
-  height: fit-content;
-  margin-left: 2%;
-  padding-left: 45px;
-  line-height: 470px;
-  letter-spacing: -15px;
-  display: flex;
-} */
-
 #mira {
   font-size: 16vw; /* Use vw units for font size */
   font-family: canopee;
@@ -211,9 +199,7 @@ body {
   align-items: center; /* Center the content vertically */
 }
 
-/* Adjust font size for smaller screens */
-@media only screen and (max-width: 600px) {
-}
+
 /*----------------page2------------*/
 #page2 {
   background-color: #c4bcb3;
