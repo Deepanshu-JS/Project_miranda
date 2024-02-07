@@ -11,7 +11,10 @@
 }
 
 html { overflow-y: scroll; overflow-x:hidden; }
-body { position: absolute; }
+body { position: absolute;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+ }
 
 #main {
   padding: 15px;
